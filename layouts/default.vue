@@ -1,10 +1,8 @@
 <template>
   <v-app>
     <AppNavbar />
-    <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+    <v-main class="full">
+      <Nuxt />
     </v-main>
   </v-app>
 </template>
@@ -37,3 +35,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.full {
+  width: 100%;
+}
+</style>

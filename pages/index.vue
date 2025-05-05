@@ -1,12 +1,14 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col class="hero">
+  <main>
+    <section class="hero">
       <div class="hero-text">
         <h1 class="display-1 font-weight-bold">SNC Medical Center</h1>
         <p>Specialized care, personalized for you.</p>
       </div>
-    </v-col>
-  </v-row>
+    </section>
+    <section class="specialization">
+    </section>
+  </main>
 </template>
 
 <script>
@@ -15,18 +17,29 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .hero {
   min-height: 100vh;
+  background-image: url('../assets/hero-image.webp');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
 }
 
 .hero-text {
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.specialization {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
