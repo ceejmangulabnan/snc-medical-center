@@ -38,5 +38,10 @@
     "name": "Dr. John Robert Mallari",
     "title": "Consultant Allergist",
     "bio": "Dr. Robert diagnoses and manages allergies and immune system conditions. He helps patients find relief from chronic allergies, asthma, and other immune-related issues."
+  },
+  {
+    "name": "Dr. Airon Fama",
+    "title": "Consultant Nephrologist",
+    "bio": "Dr. Airon Fama specializes in kidney health and treats conditions such as chronic kidney disease, kidney stones, and hypertension. With a patient-first approach, he focuses on long-term kidney care and disease prevention."
   }
 ]

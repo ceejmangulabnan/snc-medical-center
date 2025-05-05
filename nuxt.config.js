@@ -47,19 +47,9 @@ export default {
       dark: false,
       themes: {
         light: {
-          primary: "#45c522",
-          secondary: colors.lightGreen,
-          accent: colors.shades.black,
-          error: colors.red.accent3,
-        },
-        dark: {
-          primary: colors.green,
-          secondary: colors.lightGreen,
-          accent: colors.shades.black,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
+          background: "#F8F8F8",
+          muted: "#585858",
+          foreground: "#000022",
         },
       },
     },
