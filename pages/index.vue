@@ -29,7 +29,6 @@ export default {
   justify-content: center;
   position: relative;
   text-align: center;
-  padding: 2rem;
 }
 
 .hero-text {
