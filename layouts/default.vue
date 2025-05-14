@@ -1,9 +1,8 @@
 <template>
-  <v-app dark>
-    <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+  <v-app>
+    <v-main class="full">
+      <AppNavbar />
+      <Nuxt />
     </v-main>
   </v-app>
 </template>
@@ -36,3 +35,10 @@ export default {
   },
 }
 </script>
+
+<style>
+.full {
+  width: 100%;
+  min-height: 100vh;
+}
+</style>
