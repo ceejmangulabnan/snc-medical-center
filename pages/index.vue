@@ -2,8 +2,8 @@
   <main>
     <section class="hero">
       <div class="hero-text">
-        <h1 class="display-1 font-weight-bold">SNC Medical Center</h1>
-        <p>Specialized care, personalized for you.</p>
+        <h1 class="text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-medium">SNC Medical Center</h1>
+        <p class="text-subtitle text-md-h6 font-italic font-weight-regular">Specialized care, personalized for you.</p>
       </div>
     </section>
     <section class="specialization">
