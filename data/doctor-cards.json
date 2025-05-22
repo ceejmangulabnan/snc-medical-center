@@ -2,46 +2,64 @@
   {
     "name": "Dr. Cheljee Mangulabnan",
     "title": "Attending Cardiologist",
-    "bio": "Dr. Cheljee focuses on diagnosing and treating heart conditions. With a strong background in cardiovascular medicine, he provides expert care in managing heart disease and supporting patient recovery."
+    "bio": "Dr. Cheljee focuses on diagnosing and treating heart conditions. With a strong background in cardiovascular medicine, he provides expert care in managing heart disease and supporting patient recovery.",
+    "href": "cardiologist",
+    "specialty": "Cardiology"
   },
   {
     "name": "Dr. Richelle Anne Santos",
     "title": "Consultant Dermatologist",
-    "bio": "Dr. Richelle treats a wide range of skin, hair, and nail conditions. She offers both medical and cosmetic dermatology services, helping patients maintain healthy skin."
+    "bio": "Dr. Richelle treats a wide range of skin, hair, and nail conditions. She offers both medical and cosmetic dermatology services, helping patients maintain healthy skin.",
+    "href": "dermatologist",
+    "specialty": "Dermatology"
   },
   {
     "name": "Dr. Arthur Camba",
     "title": "Attending Neurologist",
-    "bio": "Dr. Arthur specializes in the brain and nervous system. He manages complex neurological disorders and works closely with patients to improve their quality of life."
+    "bio": "Dr. Arthur specializes in the brain and nervous system. He manages complex neurological disorders and works closely with patients to improve their quality of life.",
+    "href": "neurologist",
+    "specialty": "Neurology"
   },
   {
     "name": "Dr. Sarah Cariño",
     "title": "Consultant Pulmonologist",
-    "bio": "Dr. Sarah handles diseases of the lungs and respiratory system. She treats conditions like asthma, COPD, and pneumonia, and supports patients with long-term breathing issues."
+    "bio": "Dr. Sarah handles diseases of the lungs and respiratory system. She treats conditions like asthma, COPD, and pneumonia, and supports patients with long-term breathing issues.",
+    "href": "pulmonologist",
+    "specialty": "Pulmonology"
   },
   {
     "name": "Dr. Neil Franco Fernando",
     "title": "Consultant Anesthesiologist",
-    "bio": "Dr. Neil ensures patient safety and comfort during surgeries. He manages anesthesia, monitors vital signs, and helps with pain control during and after operations."
+    "bio": "Dr. Neil ensures patient safety and comfort during surgeries. He manages anesthesia, monitors vital signs, and helps with pain control during and after operations.",
+    "href": "anesthesiologist",
+    "specialty": "Anesthesiology"
   },
   {
     "name": "Dr. Joel Diama",
     "title": "Consultant Podiatrist",
-    "bio": "Dr. Joel focuses on foot and ankle health. From injuries to chronic conditions, he helps patients stay active and pain-free through personalized treatment plans."
+    "bio": "Dr. Joel focuses on foot and ankle health. From injuries to chronic conditions, he helps patients stay active and pain-free through personalized treatment plans.",
+    "href": "podiatrist",
+    "specialty": "Podiatry"
   },
   {
     "name": "Dr. Jhalila Ali",
     "title": "Attending Hematologist",
-    "bio": "Dr. Jhalila treats blood disorders such as anemia, clotting issues, and leukemia. She combines research and clinical care to improve patient outcomes."
+    "bio": "Dr. Jhalila treats blood disorders such as anemia, clotting issues, and leukemia. She combines research and clinical care to improve patient outcomes.",
+    "href": "hematologist",
+    "specialty": "Hematology"
   },
   {
     "name": "Dr. John Robert Mallari",
     "title": "Consultant Allergist",
-    "bio": "Dr. Robert diagnoses and manages allergies and immune system conditions. He helps patients find relief from chronic allergies, asthma, and other immune-related issues."
+    "bio": "Dr. Robert diagnoses and manages allergies and immune system conditions. He helps patients find relief from chronic allergies, asthma, and other immune-related issues.",
+    "href": "allergist",
+    "specialty": "Allergy and Immunology"
   },
   {
     "name": "Dr. Airon Fama",
     "title": "Consultant Nephrologist",
-    "bio": "Dr. Airon Fama specializes in kidney health and treats conditions such as chronic kidney disease, kidney stones, and hypertension. With a patient-first approach, he focuses on long-term kidney care and disease prevention."
+    "bio": "Dr. Airon Fama specializes in kidney health and treats conditions such as chronic kidney disease, kidney stones, and hypertension. With a patient-first approach, he focuses on long-term kidney care and disease prevention.",
+    "href": "nephrologist",
+    "specialty": "Nephrology"
   }
 ]
