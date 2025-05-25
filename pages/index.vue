@@ -48,44 +48,57 @@
 </template>
 
 <script>
-import doctors from '@/data/doctor-cards.json'
 import LoginModal from '@/components/LoginModal.vue'
 
 export default {
   name: 'Home',
   components: { LoginModal },
+
+  data() {
+    return {
+      doctors: [],
+      showLogin: false,
+      isLoggedIn: false
+    }
+  },
+
   computed: {
     isMobile() {
       return this.$vuetify.breakpoint.smAndDown
     }
   },
-  data() {
-    return {
-      doctors,
-      showLogin: false,
-      isLoggedIn: false
-    }
+
+  mounted() {
+    this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true'
+    this.loadDoctors()
   },
+
   methods: {
+    async loadDoctors() {
+      try {
+        const res = await fetch('/doctors.json')
+        this.doctors = await res.json()
+      } catch (err) {
+        console.error('Failed to load doctors.json:', err)
+        this.doctors = []
+      }
+    },
+
     openLogin() {
       if (this.isLoggedIn) return
       this.showLogin = true
     },
+
     onLoginSuccess() {
       this.showLogin = false
       this.isLoggedIn = true
       localStorage.setItem('isLoggedIn', 'true')
       location.reload()
     },
+
     logout() {
       this.isLoggedIn = false
       localStorage.removeItem('isLoggedIn')
-    }
-  },
-  mounted() {
-    const loggedIn = localStorage.getItem('isLoggedIn') === 'true'
-    if (loggedIn) {
-      this.isLoggedIn = true
     }
   }
 }
@@ -100,6 +113,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   text-align: center;
   padding: 0 1rem;
