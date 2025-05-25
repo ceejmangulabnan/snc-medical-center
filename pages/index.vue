@@ -3,24 +3,33 @@
     <section class="hero pb-4 pb-md-10">
       <div class="hero-text">
         <h1 class="text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-medium">SNC Medical Center</h1>
-        <p class="text-subtitle text-md-h6 font-italic font-weight-regular" style="color: #F8F8F8;">Specialized care,
-          personalized for you.</p>
+        <p class="text-subtitle text-md-h6 font-italic font-weight-regular" style="color: #F8F8F8;">
+          Specialized care, personalized for you.
+        </p>
       </div>
+
       <div class="d-flex flex-column d-sm-flex flex-sm-row gap">
-        <v-btn elevation="4" raised rounded :small="isMobile" class="button">
+        <v-btn @click="openLogin" elevation="4" raised rounded :small="isMobile" class="button">
           Get Started
         </v-btn>
-        <v-btn elevation="4" raised rounded :small="isMobile" class="button inverted">Book a Consultation</v-btn>
+        <v-btn @click="openLogin" elevation="4" raised rounded :small="isMobile" class="button inverted">
+          Book a Consultation
+        </v-btn>
+
+        <!-- Login Modal -->
+        <LoginModal v-model="showLogin" @login-success="onLoginSuccess" />
       </div>
     </section>
+
     <section class="specialization px-4 py-10">
       <div class="specialization py-8">
         <h2 class="text-h4 text-sm-h3 font-weight-bold mb-4 text-center">Meet Our Specialists</h2>
-        <p class="text-center" style="color: #585858;">Meet the doctors behind our care—respected specialists who bring
-          years of training,
-          expertise, and leadership
-          in their fields.</p>
+        <p class="text-center" style="color: #585858;">
+          Meet the doctors behind our care—respected specialists who bring years of training, expertise, and leadership
+          in their fields.
+        </p>
       </div>
+
       <div class="doctor-grid px-4">
         <v-card v-for="doctor in doctors" :key="doctor.name" class="doctor-card" elevated>
           <div>
@@ -40,9 +49,11 @@
 
 <script>
 import doctors from '@/data/doctor-cards.json'
+import LoginModal from '@/components/LoginModal.vue'
 
 export default {
   name: 'Home',
+  components: { LoginModal },
   computed: {
     isMobile() {
       return this.$vuetify.breakpoint.smAndDown
@@ -50,10 +61,33 @@ export default {
   },
   data() {
     return {
-      doctors
+      doctors,
+      showLogin: false,
+      isLoggedIn: false
+    }
+  },
+  methods: {
+    openLogin() {
+      if (this.isLoggedIn) return
+      this.showLogin = true
+    },
+    onLoginSuccess() {
+      this.showLogin = false
+      this.isLoggedIn = true
+      localStorage.setItem('isLoggedIn', 'true')
+      location.reload()
+    },
+    logout() {
+      this.isLoggedIn = false
+      localStorage.removeItem('isLoggedIn')
+    }
+  },
+  mounted() {
+    const loggedIn = localStorage.getItem('isLoggedIn') === 'true'
+    if (loggedIn) {
+      this.isLoggedIn = true
     }
   }
-
 }
 </script>
 
@@ -88,7 +122,6 @@ export default {
 .gap {
   gap: 1rem;
 }
-
 
 .doctor-card {
   display: flex;
