@@ -1,6 +1,7 @@
 <template>
   <main class="main">
     <header class="profile-header">
+      <img src="@/assets/cardiologist.jpg" alt="Dr. Cheljee Mangulabnan" class="profile-img" />
       <span class="title-sub">Attending Cardiologist</span>
       <h1 class="title-main">Dr. Cheljee Mangulabnan</h1>
       <p class="subtitle">
@@ -58,6 +59,16 @@
   text-align: center;
   max-width: 900px;
   margin-bottom: 3rem;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #ffffff30;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .title-sub {
